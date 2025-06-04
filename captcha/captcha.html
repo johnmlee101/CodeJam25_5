@@ -200,6 +200,13 @@
                 // Set the new position of the circle
                 circle.style.left = x + 'px';
                 circle.style.top = y + 'px';
+
+                isPaused = true;
+                isOverCircle = false;
+                // hide time remaining and timer
+                activeContainer.classList.add('hidden');
+                clickHereElement.classList.remove('hidden');
+
             }
 
             // Move the circle every 5 seconds
